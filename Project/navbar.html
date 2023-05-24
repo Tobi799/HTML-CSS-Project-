@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            background-color: green;
+            /* background-image: url(); */
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            /* padding:  30px; */
+            align-items: center;
+            border-bottom: 1px solid rgb(65, 64, 64);
+            line-height: 50px;
+            /* z-index: 1; */
+        }
+        nav h3{
+            margin-left: 40px;
+            font-size: 25px;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+            margin-right: 40px;
+        }
+        nav li{
+            padding: 0 30px ;
+            border-left: 1px solid rgb(65, 64, 64);
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            /* background-color: green; */
+        }
+        .hero-image img{
+            width: 100%;
+            /* margin-left: -80px; */
+            z-index: 1;
+        }
+        .hero-text {
+            z-index: 2;
+            margin-top: 10%;
+            margin-left: 60px;
+            line-height: 1.5;
+           
+        }
+        .hero-text h1{
+            font-weight: lighter;
+            width: 55%;
+        }
+        .hero-text p {
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <h3>Jack Co.</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Visual Design & Art Director</h1>
+            <p>
+                Hi, I am Jack, focusing on creating emotional experiences
+            </p>   
+            <br>         
+            <button class="hero-btn">HIRE ME</button>
+        </div>
+        <div class="hero-image">
+            <img src="image/hero_right.png.webp" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

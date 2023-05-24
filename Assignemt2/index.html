@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background-image p {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        /* font-style: oblique; */
+        font-weight: bold;
+    }
+
+    #background-image {
+        background-image: linear-gradient(rgba(16, 16, 222, 0.4), rgba(16, 16, 222, 0.4)), url("images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        background-position: center;
+    }
+
+    #background-image p {
+        /* font-size: 60px; */
+        padding-top: 220px;
+    }
+
+    .navbar-left {
+        /* margin-left: 50px; */
+        display: flex;
+        margin-top: 10px;
+        background-size: 50%;
+        justify-content: space-between;
+        align-items: center;
+        /* height: 25vh; */
+    }
+
+    .navbar-left ul {
+        list-style-type: none;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navbar-left ul a {
+        text-decoration: none;
+        padding: 30px;
+    }
+
+    .navbar-left img {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .container {
+        width: 40%;
+        margin: auto;
+        box-shadow: 0px 0px 10px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+
+    #read {
+        border: none;
+        background-color: rgb(241, 139, 22);
+        height: 40px;
+        color: white;
+        width: 120px;
+        border-radius: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #read:hover {
+        opacity: 0.8;
+    }
+
+    #read:active {
+        opacity: 0.5;
+    }
+
+    #about {
+        color: gray;
+        font-weight: bold;
+    }
+
+    .container2 {
+        background-color: rgb(41, 118, 211);
+        height: 500px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .container2 h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .form input {
+        width: 500px;
+        border: 2px;
+        height: 40px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: white;
+        background-color: rgb(41, 118, 211);
+    }
+
+    select {
+        width: 500px;
+        height: 40px;
+        border: 2px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: white;
+        background-color: rgb(41, 118, 211);
+    }
+
+    button {
+        border-radius: 20px;
+
+        background-color: white;
+        border-color: rgb(241, 139, 22)rgb(241, 139, 22);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(241, 139, 22);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: backround-color 0.15s,
+            color 0.15s;
+    }
+
+    button:hover {
+        background-color: rgb(241, 139, 22);
+        color: white;
+    }
+
+    button:active {
+        opacity: 0.7;
+    }
+
+    .media{
+        margin-left: 590px;
+        /* border-radius: ; */
+        max-width: 100%;  
+        height: auto;  
+    }
+</style>
+
+
+<body>
+    <div class="navbar-left">
+        <img src="images/logo.png" alt="">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="background-image">
+        <!-- <img src="images/banner.jpg" width="100%"> -->
+        <p>Welcome to e-vendor website</p>
+    </div>
+
+    <div>
+        <div class="container">
+            <h3 id="about">About Us</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Culpa laboriosam quo tempora obcaecati nisi? Labore eius tenetur optio ea?
+                Quisquam commodi perferendis veritatis iste omnis neque tempore qui expedita similique!
+                Beatae voluptatem mollitia quod quos expedita rem voluptatibus, fugiat similique illo possimus incidunt
+                quaerat velit voluptas, a nesciunt ea harum! <br>
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur aut, dolor cupiditate suscipit veritatis reprehenderit incidunt omnis animi cum voluptate hic
+                voluptates porro sunt, libero illo adipisci rem beatae voluptatum ducimus possimus!
+                Non expedita, nesciunt soluta veniam libero dignissimos aliquam similique.
+                Dolorem autem sed nihil distinctio tempore. Corporis dolor aut nihil modi recusandae illum voluptate,
+                adipisci, veniam repellat quas neque!
+            </p><br><br>
+            <button id="read">
+                Read more
+            </button>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>Contact Us</h1>
+        <form class="form"><br><br>
+            <label>Your Name<br>
+                <input type="text" name="text"> <br>
+            </label><br>
+            <label> Email <br>
+                <input type="text" name="text"> <br>
+                <label> How did you know about us?<br>
+                    <select name="Please choose"><br><br>
+                        <option value="google">Please choose</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Family Member">Family Member</option>
+                        <option value="Collegue">Google</option>
+                    </select><br>
+                    <label>Message <br>
+                        <input type="text" name="text">
+                </label><br><br>
+                <button>
+                    Submit
+                </button>
+        </form>
+    </div>
+    
+    <div class="media">
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"> </a>
+        <a href="https://facebook.com/" target="_blank"><img src=".\images\fb.png"></a>
+         <a href="https://twitter.com/" target="_blank"><img src=".\images\tw.png"> </a><br>
+
+    </div>
+
+</body>
+
+</html>

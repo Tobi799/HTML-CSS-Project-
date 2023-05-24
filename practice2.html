@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       Pizza Size:
+       <label>
+        <input type="radio" name="size" value="small"/>Small
+       </label>
+     <label>
+      <input type="radio" name="size" value="medium"/>Medium
+    </label>
+<label>
+<input type="radio" name="size" value="large"/>Large
+</label>
+
+Pizza Toppings:
+<label>
+<input type="checkbox" value="bacon" />Bacon
+</label>
+<label>
+<input type="checkbox" value="extra cheese" />Extra Cheese
+</label>
+<label>
+<input type="checkbox" value="extra cheese" />Onion
+</label>
+
+
+<label>Phones:
+    <select name="devices">
+     <option value="tecno">Sony</option>
+     <option value="tobi">iPhone</option>
+     <option value="samsung">Samsung</option>
+     <option value="sony" selected>Choose a device</option>
+    </select>
+</label>
+    
+
+<form method="post">
+    <fieldset>
+     <legend>Contact Details</legend>
+     <label>Address:<br>
+     <input type="text" name="text"><br>
+     </label>
+     <label>Phone Number:<br>
+     <input type="number" name="number"><br>
+     </label>
+     <label>Email:<br>
+     <input type="email" name="email"><br>
+     </label>
+    </fieldset>
+
+
+    <audio controls autoplay>
+        <source src="audio/test-audio.ogg" />
+        <source src="audio/test-audio.mp3" />
+        <p>This browser does not support our audio format.</p>
+        </audio>        
+</form>
+<video poster="images/calvin.jpg" controls preload="none"
+width="450" height="420">
+<source src="calvin.mp4" type="video/mp4" />
+<source src="calvin.webm" type="video/webm" />
+<source src="calvin.ogv" type="video/ogv" />
+<p>Calvin Harris music video</p>
+</video>
+
+</body>
+</html>

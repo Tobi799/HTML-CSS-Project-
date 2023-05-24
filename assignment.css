@@ -1,0 +1,6 @@
+.menu a:link{
+    color: green;
+    font-style: italic;
+    margin-right: 10px;
+    text-decoration: none;
+}

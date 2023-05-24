@@ -1,0 +1,60 @@
+*{
+    margin: o;
+    padding: 0;
+}
+/* .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+} */
+
+.nav ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li{
+    list-style: none;
+    margin-bottom: -30px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: green;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+/*...........my image.........*/
+.my{
+    text-align: center;
+}
+/*........About me........*/
+.me{
+    text-align: center;
+}
+
+.me p span{
+    color: red;
+}
+
+.me p::first-letter{
+    color: red;
+    font-size: 40px;
+    font-style: italic;
+}
+/*.........experience.......*/
+#Experience{
+    text-align: center;
+}
+/*.............download........*/
+.Download{
+    text-align: center;
+}
+
+.Download a{
+    color: green;
+    font-style: italic;
+    text-decoration: none;
+}
